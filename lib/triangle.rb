@@ -9,14 +9,10 @@ class Triangle
     if (@a < 0 || @b < 0 || @c < 0) || (@a + @b <= @c || @b + @c <= @a || @a + @c <= @b)
      begin
         raise TriangleError
-      # rescue TriangleError => error
-      #     puts error.message
       end
       elsif @a==0 && @b == 0 && @c == 0 
       begin
         raise TriangleError
-      # rescue TriangleError => error
-      #     puts error.message
       end
     elsif @a == @b && @b == @c && @a == @c 
       :equilateral
@@ -28,5 +24,5 @@ class Triangle
   end 
   
   class TriangleError < StandardError 
-  end #end of TriangleError 
-end #end of Triangle class 
+  end 
+end
