@@ -12,7 +12,7 @@ class Triangle
      
     #elsif :equilateral - 3 equal sides 
       
-    #elsif isos - 2 equal sides 
+    #elsif :isosceles - 2 equal sides 
      
     #else scalene - no equal 
       
