@@ -19,8 +19,8 @@ class Triangle
       :equilateral
       
     #elsif :isosceles - 2 equal sides 
-      #@a == @b || @b == @c || @a == @c
-     
+    elsif @a == @b || @b == @c || @a == @c
+      :isosceles 
     #else :scalene - no equal 
    
     end
