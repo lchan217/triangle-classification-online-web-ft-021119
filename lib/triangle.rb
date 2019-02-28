@@ -10,10 +10,6 @@ class Triangle
      begin
         raise TriangleError
       end
-      # elsif @a==0 && @b == 0 && @c == 0 
-      # begin
-      #   raise TriangleError
-      # end
     elsif @a == @b && @b == @c 
       :equilateral
     elsif @a == @b || @b == @c || @a == @c
