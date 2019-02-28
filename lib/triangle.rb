@@ -14,7 +14,12 @@ class Triangle
       # rescue TriangleError => error
       #     puts error.message
       # end
-      elsif @a==0 || @b == 0 || @c == 0 
+      elsif @a==0 && @b == 0 && @c == 0 
+      # begin
+      #   raise TriangleError
+      # rescue TriangleError => error
+      #     puts error.message
+      # end
     #elsif :equilateral - 3 equal sides 
     elsif @a == @b && @b == @c && @a == @c 
       :equilateral
