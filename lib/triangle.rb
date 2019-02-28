@@ -10,7 +10,7 @@ class Triangle
       #sum of the lengths of any two sides of a triangle always exceeds the length of the third side
       #each side > 0 
      
-    #elsif equil - 3 equal sides 
+    #elsif :equilateral - 3 equal sides 
       
     #elsif isos - 2 equal sides 
      
