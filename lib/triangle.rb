@@ -14,7 +14,7 @@ class Triangle
       
     #elsif :isosceles - 2 equal sides 
      
-    #else scalene - no equal 
+    #else :scalene - no equal 
       
   end 
   class TriangleError < StandardError 
