@@ -7,8 +7,8 @@ class Triangle
   end 
   def kind 
     #if triangle invalid -> Custom Error 
-      #sum of the lengths of any two sides of a triangle always exceeds the length of the third side
-      #each side > 0 
+
+    if (@a < 0 || @b < 0 || @c < 0) || (@a + @b < @c || @b + @c < @a || @a + @c < @b)
      
     #elsif :equilateral - 3 equal sides 
       
