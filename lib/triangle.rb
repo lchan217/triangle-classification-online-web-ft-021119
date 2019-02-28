@@ -7,17 +7,17 @@ class Triangle
   end 
   def kind
     if (@a < 0 || @b < 0 || @c < 0) || (@a + @b < @c || @b + @c < @a || @a + @c < @b)
-      # begin
-      #   raise TriangleError
+     begin
+        raise TriangleError
       # rescue TriangleError => error
       #     puts error.message
-      # end
+      end
       elsif @a==0 && @b == 0 && @c == 0 
-      # begin
-      #   raise TriangleError
+      begin
+        raise TriangleError
       # rescue TriangleError => error
       #     puts error.message
-      # end
+      end
     elsif @a == @b && @b == @c && @a == @c 
       :equilateral
     elsif @a == @b || @b == @c || @a == @c
@@ -28,8 +28,5 @@ class Triangle
   end 
   
   class TriangleError < StandardError 
-    def message 
-      "invalid triangle"
-    end 
   end #end of TriangleError 
 end #end of Triangle class 
