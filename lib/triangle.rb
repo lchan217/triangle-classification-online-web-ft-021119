@@ -15,11 +15,11 @@ class Triangle
           puts error.message
       end
     #elsif :equilateral - 3 equal sides 
-    elsif @a == @b || @b == @c || @a == @c 
+    elsif @a == @b && @b == @c && @a == @c 
       :equilateral
       
     #elsif :isosceles - 2 equal sides 
-    
+      #@a == @b || @b == @c || @a == @c
      
     #else :scalene - no equal 
    
