@@ -22,13 +22,13 @@ class Triangle
     
      
     #else :scalene - no equal 
-   end
-  end
-      
+   
+    end
   end 
+  
   class TriangleError < StandardError 
     def message 
       "invalid triangle"
     end 
-  end 
-end
+  end #end of TriangleError 
+end #end of Triangle class 
