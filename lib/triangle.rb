@@ -9,7 +9,11 @@ class Triangle
     #if triangle invalid -> Custom Error 
 
     if (@a < 0 || @b < 0 || @c < 0) || (@a + @b < @c || @b + @c < @a || @a + @c < @b)
-     
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
+      end
     #elsif :equilateral - 3 equal sides 
       
     #elsif :isosceles - 2 equal sides 
