@@ -8,12 +8,13 @@ class Triangle
   def kind 
     #if triangle invalid -> Custom Error 
 
-    if (@a <= 0 || @b <= 0 || @c <= 0) || (@a + @b < @c || @b + @c < @a || @a + @c < @b)
+    if (@a < 0 || @b < 0 || @c < 0) || (@a + @b < @c || @b + @c < @a || @a + @c < @b)
       # begin
       #   raise TriangleError
       # rescue TriangleError => error
       #     puts error.message
       # end
+      elsif @a==0 || @b == 0 || @c == 0 
     #elsif :equilateral - 3 equal sides 
     elsif @a == @b && @b == @c && @a == @c 
       :equilateral
